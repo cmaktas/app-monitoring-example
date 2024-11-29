@@ -66,6 +66,9 @@ docker-compose up --build -d
 ### Pre-configured Data Sources:
 - Loki: Logs collected by Promtail.
 - Prometheus: Metrics collected from the backend application.
+### Random Log Generator
+This application includes a utility class, LogGeneratorUtil, that automatically generates random INFO, DEBUG, and ERROR logs at regular intervals. These logs can be monitored and visualized in Grafana through the integrated Loki log aggregation system.
+
 
 ## How It Works
 
