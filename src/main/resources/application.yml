@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: app
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, prometheus
+  endpoint:
+    prometheus:
+      access: read_only
+  server:
+    port: 8081
+
+logging:
+  level:
+    root: DEBUG
